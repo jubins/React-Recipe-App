@@ -1,5 +1,5 @@
 # React-Recipe-App
-A React app that allows users to search for food recipes
+A single page React app that allows users to search for food recipes. Enter your food recipe in a search bar and you can see delicious recipes you can make, ingredients with exact measurements, image for food and calorie information.
 
 This project is bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
