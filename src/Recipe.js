@@ -8,7 +8,7 @@ const Recipe = ({title, calories, image, ingredients}) => {
             <h3>Ingredients:</h3>
             <ol>
                 {ingredients.map(ingredient => (
-                    <li>{ingredient.text}</li>
+                    <li key={title+'_'+Math.random().toString(36).slice(-5)}>{ingredient.text}</li>
                 ))}
             </ol>
             <h3>Calories: </h3>

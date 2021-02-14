@@ -13,7 +13,6 @@ function App() {
 
   useEffect(() => {
     getRecipes();
-    console.log()
   }, [query]);
 
   const getRecipes = async () => {
@@ -22,12 +21,10 @@ function App() {
     );
     const data = await response.json();
     setRecipes(data.hits);
-    console.log(data.hits);
   };
 
   const updateSearch = e => {
     setSearch(e.target.value);
-    console.log(search);
   };
 
   const getSearch = e => {
@@ -46,7 +43,7 @@ function App() {
       </form>
       <div className="recipes">
         {recipes.map(recipe => (
-          <Recipe 
+          <Recipe
             key={recipe.recipe.label}
             title={recipe.recipe.label}
             calories={recipe.recipe.calories}
